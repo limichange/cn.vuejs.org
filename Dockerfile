@@ -22,7 +22,8 @@ VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/v
 # Define working directory.
 WORKDIR /etc/nginx
 
-RUN git clone https://github.com/limichange/cn.vuejs.org.git -b gh-pages /var/www/html
+RUN rm /usr/share/nginx/html/*
+RUN git clone https://github.com/limichange/cn.vuejs.org.git -b gh-pages /usr/share/nginx/html
 
 # Define default command.
 CMD ["nginx"]
