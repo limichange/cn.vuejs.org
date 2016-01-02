@@ -24,7 +24,7 @@ WORKDIR /etc/nginx
 
 RUN git clone https://github.com/limichange/cn.vuejs.org.git /var/www/html
 
-WORKDIR /home
+WORKDIR /var/www/html
 
 RUN git checkout gh-pages
 
