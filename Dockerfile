@@ -22,7 +22,7 @@ VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/v
 # Define working directory.
 WORKDIR /etc/nginx
 
-RUN git clone https://github.com/limichange/cn.vuejs.org.git /home
+RUN git clone https://github.com/limichange/cn.vuejs.org.git /var/www/html
 
 WORKDIR /home
 
